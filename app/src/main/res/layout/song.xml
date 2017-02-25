@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:onClick="songPicked"
+    >
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="250dp"
+        android:orientation="vertical"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="16dp">
+
+    <TextView
+        android:id="@+id/song_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF99"
+        android:layout_gravity="center"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/song_artist"
+        android:layout_width="fill_parent"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF99"
+        android:textSize="18sp"/>
+
+        </LinearLayout>
+
+     <LinearLayout
+         android:layout_width="100dp"
+         android:layout_height="wrap_content"
+         android:orientation="vertical"
+         android:paddingLeft="24dp"
+         android:layout_marginTop="16dp">
+
+         <ImageView
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+             android:src="@drawable/play"
+             android:layout_gravity="center"
+             />
+
+         <TextView
+             android:text="00:00"
+             android:textColor="#FFFFFF99"
+             android:textSize="18sp"
+             android:id="@+id/song_duration"
+             android:layout_marginTop="4dp"
+             android:layout_gravity="center"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             />
+     </LinearLayout>
+
+</LinearLayout>
